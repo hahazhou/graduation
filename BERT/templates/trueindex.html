@@ -1,0 +1,16 @@
+<html>
+<meta charset="UTF-8">
+   <body>
+       <table border = 1>
+       {% for item in content %}
+       <tr>
+       <th>label:{{ item[0] }}</th>
+       <td>{{item[2]}}</td>
+       </tr>
+       {% endfor %}
+        </table>
+      <form action = "http://localhost:5000/input">
+         <p><input type = "submit" value = "upload" /></p>
+      </form>
+      </body>
+</html>
